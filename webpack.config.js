@@ -27,7 +27,7 @@ export default {
 
   plugins: [
     new webpack.ProvidePlugin({
-      fetch: 'isomorphic-fetch'
+      fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch'
     }),
     new webpack.optimize.OccurenceOrderPlugin(true),
     new webpack.optimize.DedupePlugin(),

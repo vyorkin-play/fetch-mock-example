@@ -2,8 +2,8 @@
 
 require('babel/register');
 
-var path = requrie('path');
-var webpackConfig = require('webpack.config.js');
+var path = require('path');
+var webpackConfig = require('./webpack.config.js');
 
 const testsPath = path.resolve(__dirname, './tests/index.js');
 var karmaConfig = {
@@ -27,10 +27,10 @@ var karmaConfig = {
     'karma-webpack',
     'karma-sourcemap-loader',
     'karma-mocha',
+    'karma-mocha-reporter',
     'karma-chai',
     'karma-chai-as-promised',
     'karma-sinon-chai',
-    'karma-coverage',
     'karma-phantomjs-launcher',
   ],
   singleRun: true,

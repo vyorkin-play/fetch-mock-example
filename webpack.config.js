@@ -26,9 +26,6 @@ export default {
   },
 
   plugins: [
-    new webpack.ProvidePlugin({
-      fetch: 'isomorphic-fetch'
-    }),
     new webpack.optimize.OccurenceOrderPlugin(true),
     new webpack.optimize.DedupePlugin(),
     new webpack.NoErrorsPlugin()

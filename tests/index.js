@@ -1,6 +1,7 @@
 // es6 promise polyfill is only required
 // when using karma-phantomjs-launcher
 require('es6-promise').polyfill();
+require('isomorphic-fetch');
 
 // see https://github.com/webpack/karma-webpack#alternative-usage
 

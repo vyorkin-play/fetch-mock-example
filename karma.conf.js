@@ -36,9 +36,9 @@ var karmaConfig = {
   singleRun: true,
   autoWatch: true,
   autoWatchBatchDelay: 0,
-  reportSlowerThan: 20,
+  reportSlowerThan: 2000,
   concurrency: 2,
-  browserNoActivityTimeout: 30000,
+  browserNoActivityTimeout: 300000,
 };
 
 module.exports = function(config) {
